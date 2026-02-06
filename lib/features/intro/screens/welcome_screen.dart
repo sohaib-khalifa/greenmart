@@ -24,7 +24,7 @@ class WelcomeScreen extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           Positioned(
-            bottom: 75,
+            bottom: 60,
             left: 30,
             right: 30,
             child: Column(
