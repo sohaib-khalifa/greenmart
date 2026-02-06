@@ -3,14 +3,14 @@ import 'package:greenmart/core/styles/color.dart';
 
 class TextStyles {
   static const TextStyle headline = TextStyle(
-    fontSize: 48,
+    fontSize: 40,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w600,
     color: AppColors.blackColor,
   );
 
   static const TextStyle title = TextStyle(
-    fontSize: 24,
+    fontSize: 22,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w600,
     color: AppColors.blackColor,
