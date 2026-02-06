@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -7,7 +6,7 @@ import 'package:greenmart/core/functions/navigation.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/features/auth/screens/login_screen.dart';
-import 'package:greenmart/features/intro/widgets/primary_button.dart';
+import 'package:greenmart/core/widgets/primary_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
