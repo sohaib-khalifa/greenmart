@@ -2,23 +2,50 @@ import 'package:flutter/material.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 
-class CustomPasswordFormField extends StatelessWidget {
-  const CustomPasswordFormField({super.key});
+class CustomPasswordFormField extends StatefulWidget {
+  const CustomPasswordFormField({
+    super.key,
+    this.hintText,
+    this.prefixIcon,
+    this.suffixIcon,
+    this.hintStyle,
+  });
+  final String? hintText;
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
+  final TextStyle? hintStyle;
+
+  @override
+  State<CustomPasswordFormField> createState() =>
+      _CustomPasswordFormFieldState();
+}
+
+class _CustomPasswordFormFieldState extends State<CustomPasswordFormField> {
+  bool obscureText = true;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: obscureText,
       decoration: InputDecoration(
-        hintStyle: TextStyles.caption.copyWith(
-          color: AppColors.blackNormalColor,
-        ),
-        hintText: '*************',
-        // fillColor: AppColors.accentColor,
-        // filled: true,
-        // border: OutlineInputBorder(
-        //   borderSide: BorderSide.none,
-        //   borderRadius: BorderRadius.circular(20),
-        // ),
+        prefixIcon: widget.prefixIcon,
+        suffixIcon:
+            widget.suffixIcon ??
+            IconButton(
+              onPressed: () {
+                setState(() {
+                  obscureText = !obscureText;
+                });
+              },
+              icon: obscureText
+                  ? Icon(Icons.visibility_off)
+                  : Icon(Icons.remove_red_eye),
+            ),
+        hintStyle:
+            widget.hintStyle ??
+            TextStyles.caption.copyWith(color: AppColors.blackNormalColor),
+
+        hintText: widget.hintText,
       ),
     );
   }

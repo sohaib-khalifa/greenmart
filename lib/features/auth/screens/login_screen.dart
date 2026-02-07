@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
 
-                CustomPasswordFormField(),
+                CustomPasswordFormField(hintText: '*************'),
                 SizedBox(height: 12),
 
                 Row(
