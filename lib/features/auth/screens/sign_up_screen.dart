@@ -7,16 +7,15 @@ import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/custom_password_form_field.dart';
 import 'package:greenmart/core/widgets/custom_text_form_field.dart';
 import 'package:greenmart/core/widgets/primary_button.dart';
-import 'package:greenmart/features/auth/screens/sign_up_screen.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignUpScreenState extends State<SignUpScreen> {
   final GlobalKey<FormState> formKey = GlobalKey();
 
   @override
@@ -38,15 +37,33 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: SvgPicture.asset(AppImages.carrotSvg),
                   ),
                   SizedBox(height: 40),
-                  Text('Login', style: TextStyles.title),
+                  Text('Sign Up', style: TextStyles.title),
                   SizedBox(height: 16),
                   Text(
-                    'Enter your emails and password',
+                    'Enter your credentials to continue',
                     style: TextStyles.caption.copyWith(
                       color: AppColors.greyColor,
                     ),
                   ),
                   SizedBox(height: 40),
+                  Text(
+                    'Name',
+                    style: TextStyles.caption.copyWith(
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.greyColor,
+                    ),
+                  ),
+                  SizedBox(height: 8),
+                  CustomTextFormField(
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return 'Please enter your name';
+                      }
+                      return null;
+                    },
+                    hintText: 'sohaib hisham',
+                  ),
+                  SizedBox(height: 18),
                   Text(
                     'Email',
                     style: TextStyles.caption.copyWith(
@@ -87,36 +104,20 @@ class _LoginScreenState extends State<LoginScreen> {
                     },
                     hintText: '*************',
                   ),
-                  SizedBox(height: 12),
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      TextButton(
-                        style: TextButton.styleFrom(padding: EdgeInsets.zero),
-                        onPressed: () {},
-                        child: Text(
-                          'Forgot Password?',
-                          style: TextStyles.caption.copyWith(
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 28),
+                  SizedBox(height: 32),
                   PrimaryButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {}
                     },
-                    title: 'Log In',
+                    title: 'Sign Up',
                   ),
                   SizedBox(height: 16),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Don't have an account? ",
+                        "Already have an account? ",
                         style: TextStyles.caption.copyWith(
                           fontWeight: FontWeight.w600,
                         ),
@@ -124,10 +125,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       TextButton(
                         style: TextButton.styleFrom(padding: EdgeInsets.zero),
                         onPressed: () {
-                          pushTo(context, SignUpScreen());
+                          popFrom(context);
                         },
                         child: Text(
-                          "Singup",
+                          "Login",
                           style: TextStyles.caption.copyWith(
                             fontWeight: FontWeight.w600,
                             color: AppColors.primaryColor,
