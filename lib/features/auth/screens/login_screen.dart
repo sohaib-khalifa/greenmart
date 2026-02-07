@@ -42,7 +42,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 8),
-                CustomTextFormField(),
+                CustomTextFormField(hintText: 'example@gmail.com'),
                 SizedBox(height: 18),
                 Text(
                   'Password',
