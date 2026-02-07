@@ -39,8 +39,9 @@ class PrimaryButton extends StatelessWidget {
         // style: TextStyles.subtitle.copyWith(color: AppColors.backgroundColor),
         style:
             textStyle ??
-            TextStyles.body.copyWith(color: AppColors.backgroundColor,
-            fontWeight: FontWeight.w600
+            TextStyles.body.copyWith(
+              color: AppColors.whiteColor,
+              fontWeight: FontWeight.w600,
             ),
       ),
     );
