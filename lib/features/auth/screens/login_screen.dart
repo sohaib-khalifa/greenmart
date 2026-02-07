@@ -8,6 +8,7 @@ import 'package:greenmart/core/widgets/custom_password_form_field.dart';
 import 'package:greenmart/core/widgets/custom_text_form_field.dart';
 import 'package:greenmart/core/widgets/primary_button.dart';
 import 'package:greenmart/features/auth/screens/sign_up_screen.dart';
+import 'package:greenmart/features/auth/screens/verify_mobile_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -23,9 +24,9 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: SingleChildScrollView(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Form(
               key: formKey,
               autovalidateMode: AutovalidateMode.onUnfocus,
@@ -94,7 +95,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       TextButton(
                         style: TextButton.styleFrom(padding: EdgeInsets.zero),
-                        onPressed: () {},
+                        onPressed: () {
+                          pushTo(context, VerifyMobileScreen());
+                        },
                         child: Text(
                           'Forgot Password?',
                           style: TextStyles.caption.copyWith(
