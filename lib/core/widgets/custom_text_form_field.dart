@@ -8,16 +8,20 @@ class CustomTextFormField extends StatelessWidget {
     this.hintText,
     this.prefixIcon,
     this.suffixIcon,
-    this.hintStyle,
+    this.hintStyle, this.validator,
   });
   final String? hintText;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final TextStyle? hintStyle;
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      
+      validator: validator,
       decoration: InputDecoration(
+        
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
         hintStyle:

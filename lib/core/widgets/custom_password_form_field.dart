@@ -9,11 +9,13 @@ class CustomPasswordFormField extends StatefulWidget {
     this.prefixIcon,
     this.suffixIcon,
     this.hintStyle,
+    this.validator,
   });
   final String? hintText;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final TextStyle? hintStyle;
+  final String? Function(String?)? validator;
 
   @override
   State<CustomPasswordFormField> createState() =>
@@ -26,6 +28,7 @@ class _CustomPasswordFormFieldState extends State<CustomPasswordFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: widget.validator,
       obscureText: obscureText,
       decoration: InputDecoration(
         prefixIcon: widget.prefixIcon,
