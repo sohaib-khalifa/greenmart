@@ -15,12 +15,7 @@ class CustomTextFormField extends StatelessWidget {
           color: AppColors.blackNormalColor,
         ),
         hintText: 'example@gmail.com',
-        fillColor: AppColors.accentColor,
-        filled: true,
-        border: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(20),
-        ),
+
       ),
     );
   }

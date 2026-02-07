@@ -3,9 +3,7 @@ import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 
 class CustomPasswordFormField extends StatelessWidget {
-  const CustomPasswordFormField({
-    super.key,
-  });
+  const CustomPasswordFormField({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +13,12 @@ class CustomPasswordFormField extends StatelessWidget {
           color: AppColors.blackNormalColor,
         ),
         hintText: '*************',
-        fillColor: AppColors.accentColor,
-        filled: true,
-        border: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(20),
-        ),
+        // fillColor: AppColors.accentColor,
+        // filled: true,
+        // border: OutlineInputBorder(
+        //   borderSide: BorderSide.none,
+        //   borderRadius: BorderRadius.circular(20),
+        // ),
       ),
     );
   }

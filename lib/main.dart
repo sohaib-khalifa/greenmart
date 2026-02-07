@@ -14,6 +14,14 @@ class GreenMart extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        inputDecorationTheme: InputDecorationTheme(
+          fillColor: AppColors.accentColor,
+          filled: true,
+          border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(20),
+          ),
+        ),
         fontFamily: AppFonts.poppins,
         colorScheme: ColorScheme.fromSeed(
           seedColor: AppColors.primaryColor,
