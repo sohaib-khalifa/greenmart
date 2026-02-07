@@ -10,4 +10,6 @@ class AppColors {
   static const Color blackNormalColor = Color(0xff37474F);
   static const Color whiteColor = Color(0xffFFF9FF);
   static const Color deepSpaceBlack = Color(0xff181725);
+  static const Color tangoNormalColor = Color(0xffF37A20);
+  static const Color redColor = Colors.red;
 }
