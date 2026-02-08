@@ -86,7 +86,7 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
                       },
 
                       onCompleted: (value) {
-                        pushTo(context, MainAppScreen());
+                        pushAndRemoveUntilAll(context, MainAppScreen());
                       },
                     ),
                   ),
@@ -126,7 +126,7 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
                     height: 70,
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
-                        // pushTo(context, MainAppScreen());
+                        pushAndRemoveUntilAll(context, MainAppScreen());
                       }
                     },
                     title: 'Confirm',
