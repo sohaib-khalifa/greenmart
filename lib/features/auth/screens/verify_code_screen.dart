@@ -3,6 +3,7 @@ import 'package:greenmart/core/functions/navigation.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/primary_button.dart';
+import 'package:greenmart/features/main/main_app_screen.dart';
 import 'package:pinput/pinput.dart';
 
 class VerifyCodeScreen extends StatefulWidget {
@@ -53,40 +54,41 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
                     ),
                   ),
                   SizedBox(height: 32),
-                  Pinput(
-                    // controller: pinController,
-                    errorBuilder: (errorText, pin) {
-                      return Padding(
-                        padding: EdgeInsetsGeometry.symmetric(vertical: 10),
-                        child: Center(
-                          child: Text(
-                            errorText!,
-                            style: TextStyles.caption.copyWith(
-                              color: AppColors.redColor,
+                  Center(
+                    child: Pinput(
+                      // controller: pinController,
+                      errorBuilder: (errorText, pin) {
+                        return Padding(
+                          padding: EdgeInsetsGeometry.symmetric(vertical: 10),
+                          child: Center(
+                            child: Text(
+                              errorText!,
+                              style: TextStyles.caption.copyWith(
+                                color: AppColors.redColor,
+                              ),
                             ),
                           ),
-                        ),
-                      );
-                    },
+                        );
+                      },
 
-                    // pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
-                    length: 5,
-                    validator: (value) {
-                      if (value == null || value.isEmpty) {
-                        return 'This field is required';
-                      }
+                      // pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
+                      length: 5,
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return 'This field is required';
+                        }
 
-                      if (value != validPin) {
-                        return 'Pin is incorrect';
-                      }
+                        if (value != validPin) {
+                          return 'Pin is incorrect';
+                        }
 
-                      return null;
-                    },
+                        return null;
+                      },
 
-                    /////////////////////////
-                    // onCompleted: (value) {
-                    //   print("Code: $value");
-                    // },
+                      onCompleted: (value) {
+                        pushTo(context, MainAppScreen());
+                      },
+                    ),
                   ),
 
                   Row(
@@ -123,24 +125,9 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
                   PrimaryButton(
                     height: 70,
                     onPressed: () {
-                      // if (formKey.currentState!.validate()) {
-                      //   // push to home
-                      // }
-                      /////////////
-                      // final pin = pinController.text;
-
-                      // if (pin.isEmpty) {
-                      //   print("required");
-                      //   return;
-                      // }
-
-                      // if (pin != validPin) {
-                      //   print("incorrect");
-                      //   return;
-                      // }
-
-                      // ✅ صح → روح للصفحة التالية
-                      // pushTo(context, HomeScreen());
+                      if (formKey.currentState!.validate()) {
+                        // pushTo(context, MainAppScreen());
+                      }
                     },
                     title: 'Confirm',
                   ),

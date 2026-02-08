@@ -81,6 +81,7 @@ class _VerifyMobileScreenState extends State<VerifyMobileScreen> {
                       // style: TextButton.styleFrom(padding: EdgeInsets.zero),
                       onPressed: () {},
                       child: Text(
+                        
                         'Resend confirmation code (1:23)',
                         style: TextStyles.body.copyWith(
                           fontWeight: FontWeight.w300,
