@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:greenmart/core/constants/app_images.dart';
 import 'package:greenmart/core/styles/color.dart';
-import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/custom_svg_picture.dart';
 
 class MainAppScreen extends StatefulWidget {
@@ -27,18 +26,7 @@ class _MainAppScreenState extends State<MainAppScreen> {
     return Scaffold(
       body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: AppColors.backgroundColor,
-        selectedItemColor: AppColors.primaryColor,
-        unselectedItemColor: AppColors.greyColor,
-        selectedLabelStyle: TextStyles.small.copyWith(
-          fontWeight: FontWeight.w500,
-          height: 1.8,
-        ),
-        unselectedLabelStyle: TextStyles.small.copyWith(
-          fontWeight: FontWeight.w500,
-          height: 1.8,
-        ),
+
         currentIndex: currentIndex,
         onTap: (index) {
           setState(() {
