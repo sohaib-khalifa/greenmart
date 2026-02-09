@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greenmart/core/constants/app_fonts.dart';
 import 'package:greenmart/core/styles/color.dart';
-import 'package:greenmart/features/intro/screens/splash_screen.dart';
 import 'package:greenmart/features/main/main_app_screen.dart';
 
 void main() {
@@ -37,8 +36,8 @@ class GreenMart extends StatelessWidget {
         return SafeArea(top: false, bottom: true, child: child!);
       },
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
-      // home: MainAppScreen(),
+      // home: SplashScreen(),
+      home: MainAppScreen(),
     );
   }
 }
