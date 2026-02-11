@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:greenmart/core/constants/app_images.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/widgets/custom_svg_picture.dart';
+import 'package:greenmart/features/home/screens/shop_screen.dart';
 
 class MainAppScreen extends StatefulWidget {
   const MainAppScreen({super.key});
@@ -13,11 +14,11 @@ class MainAppScreen extends StatefulWidget {
 
 int currentIndex = 0;
 List<Widget> screens = [
-  Center(child: Text('Home')),
+  ShopScreen(),
   Center(child: Text('Explore')),
   Center(child: Text('Cart')),
-  Center(child: Text('Favorites')),
-  Center(child: Text('Profile')),
+  Center(child: Text('Favourite')),
+  Center(child: Text('Account')),
 ];
 
 class _MainAppScreenState extends State<MainAppScreen> {
@@ -26,7 +27,6 @@ class _MainAppScreenState extends State<MainAppScreen> {
     return Scaffold(
       body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-
         currentIndex: currentIndex,
         onTap: (index) {
           setState(() {
@@ -40,7 +40,7 @@ class _MainAppScreenState extends State<MainAppScreen> {
               path: AppImages.storeSvg,
               color: AppColors.primaryColor,
             ),
-            label: 'Home',
+            label: 'Shop',
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(AppImages.exploreSvg),
@@ -68,7 +68,7 @@ class _MainAppScreenState extends State<MainAppScreen> {
               color: AppColors.primaryColor,
             ),
 
-            label: 'Favorites',
+            label: 'Favourite',
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(AppImages.userSvg),
@@ -77,7 +77,7 @@ class _MainAppScreenState extends State<MainAppScreen> {
               color: AppColors.primaryColor,
             ),
 
-            label: 'Profile',
+            label: 'Account',
           ),
         ],
       ),

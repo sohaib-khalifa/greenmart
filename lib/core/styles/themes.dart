@@ -5,6 +5,10 @@ import 'package:greenmart/core/styles/text_style.dart';
 
 class AppThemes {
   static ThemeData get light => ThemeData(
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.backgroundColor,
+      surfaceTintColor: Colors.transparent,
+    ),
     inputDecorationTheme: InputDecorationTheme(
       fillColor: AppColors.accentColor,
       filled: true,
