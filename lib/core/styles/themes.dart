@@ -23,7 +23,11 @@ class AppThemes {
       onSurface: AppColors.blackColor,
     ),
     textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(foregroundColor: AppColors.blackColor),
+      style: TextButton.styleFrom(
+        foregroundColor: AppColors.primaryColor,
+        padding: EdgeInsets.all(0),
+        minimumSize: Size.zero,
+      ),
     ),
     scaffoldBackgroundColor: AppColors.backgroundColor,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
