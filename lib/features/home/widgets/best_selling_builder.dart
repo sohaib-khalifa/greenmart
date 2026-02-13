@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/features/home/widgets/item_card.dart';
 
-class OffersBuilder extends StatelessWidget {
-  const OffersBuilder({super.key});
+class BestSellingBuilder extends StatelessWidget {
+  const BestSellingBuilder({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class OffersBuilder extends StatelessWidget {
       children: [
         Row(
           children: [
-            Text('Exclusive Offer', style: TextStyles.title),
+            Text('Best Selling', style: TextStyles.title),
             Spacer(),
             TextButton(
               onPressed: () {},

@@ -4,6 +4,7 @@ import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/custom_svg_picture.dart';
 import 'package:greenmart/core/widgets/custom_text_form_field.dart';
+import 'package:greenmart/features/home/widgets/best_selling_builder.dart';
 import 'package:greenmart/features/home/widgets/offers_builder.dart';
 
 class ShopScreen extends StatelessWidget {
@@ -22,17 +23,20 @@ class ShopScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
-        child: Column(
-          spacing: 20,
-          children: [
-            CustomTextFormField(
-              prefixIcon: Icon(Icons.search),
-              hintText: 'Search Store',
-            ),
+        child: SingleChildScrollView(
+          child: Column(
+            spacing: 20,
+            children: [
+              CustomTextFormField(
+                prefixIcon: Icon(Icons.search),
+                hintText: 'Search Store',
+              ),
 
-            // SizedBox(height: 22),
-            OffersBuilder(),
-          ],
+              // SizedBox(height: 22),
+              OffersBuilder(),
+              BestSellingBuilder(),
+            ],
+          ),
         ),
       ),
     );
