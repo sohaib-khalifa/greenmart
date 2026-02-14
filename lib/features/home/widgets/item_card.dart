@@ -3,18 +3,14 @@ import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 
 class ItemCard extends StatelessWidget {
-  const ItemCard({
-    super.key,
-  });
+  const ItemCard({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 160,
       margin: EdgeInsets.symmetric(vertical: 8),
-      padding: const EdgeInsets.symmetric(
-        horizontal: 12,
-        vertical: 18,
-      ),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 18),
       decoration: BoxDecoration(
         color: AppColors.backgroundColor,
         boxShadow: [
@@ -26,43 +22,34 @@ class ItemCard extends StatelessWidget {
           ),
         ],
         borderRadius: BorderRadius.circular(16),
-    
+
         border: Border.all(color: AppColors.accentColor),
       ),
-      width: 160,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            child: Center(
-              child: Image.asset('assets/images/banana.png'),
-            ),
+            child: Center(child: Image.asset('assets/images/banana.png')),
           ),
           SizedBox(height: 16),
-    
+
           Text(
             'Bananas',
-            style: TextStyles.body.copyWith(
-              fontWeight: FontWeight.w600,
-            ),
+            style: TextStyles.body.copyWith(fontWeight: FontWeight.w600),
           ),
           SizedBox(height: 8),
           Text(
             '7pcs',
-            style: TextStyles.small.copyWith(
-              color: AppColors.greyColor,
-            ),
+            style: TextStyles.small.copyWith(color: AppColors.greyColor),
           ),
           SizedBox(height: 8),
-    
+
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 '\$4.99',
-                style: TextStyles.body.copyWith(
-                  fontWeight: FontWeight.w600,
-                ),
+                style: TextStyles.body.copyWith(fontWeight: FontWeight.w600),
               ),
               FloatingActionButton.small(
                 elevation: 0,

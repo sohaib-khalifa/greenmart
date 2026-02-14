@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:greenmart/core/constants/app_images.dart';
 import 'package:greenmart/core/styles/color.dart';
-import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/custom_svg_picture.dart';
 import 'package:greenmart/core/widgets/custom_text_form_field.dart';
+import 'package:greenmart/features/home/widgets/all_products_builder.dart';
 import 'package:greenmart/features/home/widgets/best_selling_builder.dart';
 import 'package:greenmart/features/home/widgets/offers_builder.dart';
 
@@ -35,6 +35,7 @@ class ShopScreen extends StatelessWidget {
               // SizedBox(height: 22),
               OffersBuilder(),
               BestSellingBuilder(),
+              AllProductsBuilder(),
             ],
           ),
         ),
