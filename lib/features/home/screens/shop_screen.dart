@@ -29,17 +29,23 @@ class ShopScreen extends StatelessWidget {
           child: Column(
             spacing: 20,
             children: [
-              CustomTextFormField(
-                onTapOfGestureDetector: () {
-                  pushTo(context, SearchScreen());
-                },
-                // onTap: () {
-                // onTapOfCustomTextFormField not do ===> because exist enabled => false
-                //   pushTo(context, SearchScreen());
-                // },
-                enabled: false,
-                prefixIcon: Icon(Icons.search),
-                hintText: 'Search Store',
+              Hero(
+                tag: 'search',
+                child: Material(
+                  color: Colors.transparent,
+                  child: CustomTextFormField(
+                    onTapOfGestureDetector: () {
+                      pushTo(context, SearchScreen());
+                    },
+                    // onTap: () {
+                    // onTapOfCustomTextFormField not do ===> because exist enabled => false
+                    //   pushTo(context, SearchScreen());
+                    // },
+                    enabled: false,
+                    prefixIcon: Icon(Icons.search),
+                    hintText: 'Search Store',
+                  ),
+                ),
               ),
 
               // SizedBox(height: 22),

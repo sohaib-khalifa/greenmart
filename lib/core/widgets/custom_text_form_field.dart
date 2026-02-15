@@ -32,11 +32,13 @@ class CustomTextFormField extends StatelessWidget {
       child: AbsorbPointer(
         absorbing: !(enabled ?? true),
         child: TextFormField(
+          
           enabled: enabled,
           keyboardType: keyboardType ?? TextInputType.text,
 
           validator: validator,
           decoration: InputDecoration(
+            
             prefixIcon: prefixIcon,
             suffixIcon: suffixIcon,
             hintStyle:
