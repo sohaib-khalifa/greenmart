@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
+import 'package:greenmart/features/home/data/product_model.dart';
 
 class ItemCard extends StatelessWidget {
-  const ItemCard({super.key});
-
+  const ItemCard({super.key, required this.productModel});
+  final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,18 +29,18 @@ class ItemCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: Center(child: Image.asset('assets/images/banana.png')),
-          ),
+          Expanded(child: Center(child: Image.network(productModel.image))),
           SizedBox(height: 16),
 
           Text(
-            'Bananas',
+            // 'Bananas',
+            productModel.name,
             style: TextStyles.body.copyWith(fontWeight: FontWeight.w600),
           ),
           SizedBox(height: 8),
           Text(
-            '7pcs',
+            // '7pcs',
+            productModel.quantityForPrice,
             style: TextStyles.small.copyWith(color: AppColors.greyColor),
           ),
           SizedBox(height: 8),
@@ -48,7 +49,8 @@ class ItemCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                '\$4.99',
+                // '\$4.99
+                '\$${productModel.price.toStringAsFixed(2)}',
                 style: TextStyles.body.copyWith(fontWeight: FontWeight.w600),
               ),
               FloatingActionButton.small(

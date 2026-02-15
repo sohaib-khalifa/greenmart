@@ -1,6 +1,6 @@
 import 'package:greenmart/features/home/data/product_model.dart';
 
-List<ProductModel> offers = [
+List<ProductModel> offersList = [
   ProductModel(
     id: '1',
     image:
@@ -36,7 +36,7 @@ List<ProductModel> offers = [
   ),
 ];
 
-List<ProductModel> bestSelling = [
+List<ProductModel> bestSellingList = [
   ProductModel(
     id: '1',
     image:
@@ -71,7 +71,7 @@ List<ProductModel> bestSelling = [
   ),
 ];
 
-List<ProductModel> allProducts = [
+List<ProductModel> allProductsList = [
   ProductModel(
     id: '1',
     image:

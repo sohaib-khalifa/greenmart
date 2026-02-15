@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greenmart/core/styles/text_style.dart';
+import 'package:greenmart/features/home/data/dummy_data.dart';
 import 'package:greenmart/features/home/widgets/item_card.dart';
 
 class BestSellingBuilder extends StatelessWidget {
@@ -25,9 +26,9 @@ class BestSellingBuilder extends StatelessWidget {
           child: ListView.separated(
             separatorBuilder: (context, index) => SizedBox(width: 12),
             scrollDirection: Axis.horizontal,
-            itemCount: 3,
+            itemCount: bestSellingList.length,
             itemBuilder: (context, index) {
-              return ItemCard();
+              return ItemCard(productModel: bestSellingList[index] );
             },
           ),
         ),
