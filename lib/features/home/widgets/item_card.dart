@@ -54,6 +54,7 @@ class ItemCard extends StatelessWidget {
                 style: TextStyles.body.copyWith(fontWeight: FontWeight.w600),
               ),
               FloatingActionButton.small(
+                heroTag: UniqueKey(),
                 elevation: 0,
                 backgroundColor: AppColors.primaryColor,
                 foregroundColor: AppColors.whiteColor,

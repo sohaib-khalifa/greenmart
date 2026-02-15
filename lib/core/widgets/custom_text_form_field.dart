@@ -11,6 +11,9 @@ class CustomTextFormField extends StatelessWidget {
     this.hintStyle,
     this.validator,
     this.keyboardType,
+    this.enabled = true,
+    this.onTapOfTextFormField,
+    this.onTapOfGestureDetector,
   });
   final String? hintText;
   final Widget? prefixIcon;
@@ -18,19 +21,31 @@ class CustomTextFormField extends StatelessWidget {
   final TextStyle? hintStyle;
   final String? Function(String?)? validator;
   final TextInputType? keyboardType;
+  final bool? enabled;
+  final void Function()? onTapOfTextFormField;
+  final void Function()? onTapOfGestureDetector;
+
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      keyboardType:keyboardType  ??  TextInputType.text,
-      
-      validator: validator,
-      decoration: InputDecoration(
-        prefixIcon: prefixIcon,
-        suffixIcon: suffixIcon,
-        hintStyle:
-            hintStyle ??
-            TextStyles.caption.copyWith(color: AppColors.blackNormalColor),
-        hintText: hintText,
+    return GestureDetector(
+      onTap: onTapOfGestureDetector,
+      child: AbsorbPointer(
+        absorbing: !(enabled ?? true),
+        child: TextFormField(
+          enabled: enabled,
+          keyboardType: keyboardType ?? TextInputType.text,
+
+          validator: validator,
+          decoration: InputDecoration(
+            prefixIcon: prefixIcon,
+            suffixIcon: suffixIcon,
+            hintStyle:
+                hintStyle ??
+                TextStyles.caption.copyWith(color: AppColors.blackNormalColor),
+            hintText: hintText,
+          ),
+          onTap: onTapOfTextFormField,
+        ),
       ),
     );
   }
