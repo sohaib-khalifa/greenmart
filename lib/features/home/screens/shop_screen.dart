@@ -7,7 +7,7 @@ import 'package:greenmart/core/widgets/custom_text_form_field.dart';
 import 'package:greenmart/features/home/widgets/all_products_builder.dart';
 import 'package:greenmart/features/home/widgets/best_selling_builder.dart';
 import 'package:greenmart/features/home/widgets/offers_builder.dart';
-import 'package:greenmart/features/search/search_screen.dart';
+import 'package:greenmart/features/search/screens/search_screen.dart';
 
 class ShopScreen extends StatelessWidget {
   const ShopScreen({super.key});
