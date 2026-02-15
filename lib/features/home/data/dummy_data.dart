@@ -1,0 +1,123 @@
+import 'package:greenmart/features/home/data/product_model.dart';
+
+List<ProductModel> offers = [
+  ProductModel(
+    id: '1',
+    image:
+        'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+    name: 'Bananas',
+    quantityForPrice: "7pcs",
+    price: 4.99,
+  ),
+  ProductModel(
+    id: '2',
+    image:
+        'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+    name: 'Red Apple',
+    quantityForPrice: "1kg",
+    price: 3.99,
+  ),
+  ProductModel(
+    id: '3',
+    image:
+        'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+    name: 'Bell Pepper Red',
+    quantityForPrice: "1kg",
+    price: 3.0,
+  ),
+
+  ProductModel(
+    id: '4',
+    image:
+        'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+    name: 'Ginger',
+    quantityForPrice: "250gm",
+    price: 2.99,
+  ),
+];
+
+List<ProductModel> bestSelling = [
+  ProductModel(
+    id: '1',
+    image:
+        'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+    name: 'Bell Pepper Red',
+    quantityForPrice: "1kg",
+    price: 3.0,
+  ),
+  ProductModel(
+    id: '2',
+    image:
+        'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+    name: 'Ginger',
+    quantityForPrice: "250gm",
+    price: 2.99,
+  ),
+  ProductModel(
+    id: '3',
+    image:
+        'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+    name: 'Bananas',
+    quantityForPrice: "7pcs",
+    price: 4.99,
+  ),
+  ProductModel(
+    id: '4',
+    image:
+        'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+    name: 'Red Apple',
+    quantityForPrice: "1kg",
+    price: 3.99,
+  ),
+];
+
+List<ProductModel> allProducts = [
+  ProductModel(
+    id: '1',
+    image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8vq9elNmD7LbX2VrziesRldY0jqXB54hLvA&s',
+    name: 'Orange',
+    quantityForPrice: "500gm",
+    price: 1.99,
+  ),
+  ProductModel(
+    id: '2',
+    image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT-bteAg0wbO0yBMfyM8fLq0vG5At3wwLtQ&s',
+    name: 'Mango',
+    quantityForPrice: "1kg",
+    price: 6.99,
+  ),
+  ProductModel(
+    id: '3',
+    image:
+        'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+    name: 'Ginger',
+    quantityForPrice: "250gm",
+    price: 2.99,
+  ),
+  ProductModel(
+    id: '4',
+    image:
+        'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+    name: 'Red Apple',
+    quantityForPrice: "1kg",
+    price: 3.99,
+  ),
+  ProductModel(
+    id: '5',
+    image:
+        'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+    name: 'Bell Pepper Red',
+    quantityForPrice: "1kg",
+    price: 3.0,
+  ),
+  ProductModel(
+    id: '6',
+    image:
+        'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+    name: 'Bananas',
+    quantityForPrice: "7pcs",
+    price: 4.99,
+  ),
+];
