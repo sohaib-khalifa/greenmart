@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:greenmart/core/constants/app_images.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/widgets/custom_svg_picture.dart';
+import 'package:greenmart/features/explore/screens/explore_screen.dart';
 import 'package:greenmart/features/home/screens/shop_screen.dart';
 
 class MainAppScreen extends StatefulWidget {
@@ -15,7 +16,7 @@ class MainAppScreen extends StatefulWidget {
 int currentIndex = 0;
 List<Widget> screens = [
   ShopScreen(),
-  Center(child: Text('Explore')),
+  ExploreScreen(),
   Center(child: Text('Cart')),
   Center(child: Text('Favourite')),
   Center(child: Text('Account')),
