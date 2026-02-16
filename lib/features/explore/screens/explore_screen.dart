@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/custom_text_form_field.dart';
+import 'package:greenmart/features/explore/data/dummy_data.dart';
 import 'package:greenmart/features/explore/widgets/item_card_explore.dart';
 
 class ExploreScreen extends StatelessWidget {
@@ -24,7 +25,7 @@ class ExploreScreen extends StatelessWidget {
                 hintText: 'Search Store',
               ),
               GridView.builder(
-                itemCount: 8,
+                itemCount: exploreCategories.length,
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -33,7 +34,9 @@ class ExploreScreen extends StatelessWidget {
                   mainAxisExtent: 180,
                 ),
                 itemBuilder: (context, index) {
-                  return ItemCardExplore();
+                  return ItemCardExplore(
+                    exploreCategoryModel: exploreCategories[index],
+                  );
                 },
               ),
             ],
