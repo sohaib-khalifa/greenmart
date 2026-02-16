@@ -31,7 +31,12 @@ class ItemCardExplore extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(child: Image.network(exploreCategoryModel.imagePath)),
+          Expanded(
+            child: Image.asset(
+              exploreCategoryModel.imagePath,
+              // fit: BoxFit.contain,
+            ),
+          ),
 
           Text(
             textAlign: TextAlign.center,
