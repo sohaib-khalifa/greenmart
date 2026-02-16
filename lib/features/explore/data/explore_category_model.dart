@@ -6,6 +6,7 @@ class ExploreCategoryModel {
   final String imagePath;
   final Color bgColor;
   final Color borderColor;
+  final Widget destination;
 
   ExploreCategoryModel({
     required this.id,
@@ -13,5 +14,6 @@ class ExploreCategoryModel {
     required this.imagePath,
     required this.bgColor,
     required this.borderColor,
+    required this.destination,
   });
 }
