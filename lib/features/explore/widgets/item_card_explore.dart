@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:greenmart/core/functions/navigation.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/features/explore/data/explore_category_model.dart';
 
 class ItemCardExplore extends StatelessWidget {
-  const ItemCardExplore({super.key, required this.exploreCategoryModel, this.onTap});
+  // const ItemCardExplore({super.key, required this.exploreCategoryModel, this.onTap});
+  const ItemCardExplore({super.key, required this.exploreCategoryModel});
   final ExploreCategoryModel exploreCategoryModel;
-  final void Function()? onTap;
+
+  // final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onTap,
+      // onTap: onTap,
+      onTap: () => pushTo(context, exploreCategoryModel.destination),
       child: Container(
         width: 150,
         margin: EdgeInsets.symmetric(vertical: 8),
@@ -18,7 +22,7 @@ class ItemCardExplore extends StatelessWidget {
         decoration: BoxDecoration(
           // color: AppColors.backgroundColor,
           color: exploreCategoryModel.bgColor,
-      
+
           boxShadow: [
             BoxShadow(
               color: AppColors.blackColor.withValues(alpha: 0.07),
@@ -28,7 +32,7 @@ class ItemCardExplore extends StatelessWidget {
             ),
           ],
           borderRadius: BorderRadius.circular(16),
-      
+
           border: Border.all(color: exploreCategoryModel.borderColor),
         ),
         child: Column(
@@ -40,7 +44,7 @@ class ItemCardExplore extends StatelessWidget {
                 // fit: BoxFit.contain,
               ),
             ),
-      
+
             Text(
               textAlign: TextAlign.center,
               // 'Frash Fruits & Vegetable',

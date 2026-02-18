@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:greenmart/core/functions/navigation.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/custom_text_form_field.dart';
 import 'package:greenmart/features/explore/data/dummy_data.dart';
@@ -36,9 +35,9 @@ class ExploreScreen extends StatelessWidget {
                 ),
                 itemBuilder: (context, index) {
                   return ItemCardExplore(
-                    onTap: (){
-                      pushTo(context, exploreCategories[index].destination );
-                    },
+                    // onTap: () {
+                    //   pushTo(context, exploreCategories[index].destination);
+                    // },
                     exploreCategoryModel: exploreCategories[index],
                   );
                 },
