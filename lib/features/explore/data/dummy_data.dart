@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:greenmart/core/constants/app_images.dart';
-import 'package:greenmart/features/beverages/screens/bakery_screen.dart';
-import 'package:greenmart/features/beverages/screens/beverages_screen.dart';
-import 'package:greenmart/features/beverages/screens/cooking_oil_screen.dart';
-import 'package:greenmart/features/beverages/screens/dairy_screen.dart';
-import 'package:greenmart/features/beverages/screens/fruits_screen.dart';
-import 'package:greenmart/features/beverages/screens/meat_screen.dart';
+import 'package:greenmart/features/category_products/screens/bakery_screen.dart';
+import 'package:greenmart/features/category_products/screens/beverages_screen.dart';
+import 'package:greenmart/features/category_products/screens/cooking_oil_screen.dart';
+import 'package:greenmart/features/category_products/screens/dairy_screen.dart';
+import 'package:greenmart/features/category_products/screens/fruits_screen.dart';
+import 'package:greenmart/features/category_products/screens/meat_screen.dart';
 import 'explore_category_model.dart';
 
 List<ExploreCategoryModel> exploreCategories = [
