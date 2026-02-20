@@ -325,7 +325,7 @@ List<ProductModel> bestSellingList = [
 
 List<ProductModel> allProductsList = [
   ProductModel(
-    id: '1',
+    id: '1C',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8vq9elNmD7LbX2VrziesRldY0jqXB54hLvA&s',
     name: 'Orange',
@@ -335,7 +335,7 @@ List<ProductModel> allProductsList = [
         "Oranges are nutritious. Oranges may be good for vitamin C. Oranges may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
-    id: '2',
+    id: '2C',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT-bteAg0wbO0yBMfyM8fLq0vG5At3wwLtQ&s',
     name: 'Mango',
@@ -345,7 +345,7 @@ List<ProductModel> allProductsList = [
         "Mangoes are nutritious. Mangoes may be good for skin. Mangoes may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
-    id: '3',
+    id: '3C',
     image:
         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
     name: 'Ginger',
@@ -355,7 +355,7 @@ List<ProductModel> allProductsList = [
         "Ginger is nutritious. Ginger may be good for digestion. Ginger may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
-    id: '4',
+    id: '4C',
     image:
         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
     name: 'Red Apple',
@@ -365,7 +365,7 @@ List<ProductModel> allProductsList = [
         "Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet.",
   ),
   ProductModel(
-    id: '5',
+    id: '5C',
     image:
         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
     name: 'Bell Pepper Red',
@@ -375,7 +375,7 @@ List<ProductModel> allProductsList = [
         "Peppers are nutritious. Peppers may be good for immunity. Peppers may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
-    id: '6',
+    id: '6C',
     image:
         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
     name: 'Bananas',

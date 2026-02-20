@@ -49,12 +49,9 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                   bottomRight: Radius.circular(25),
                 ),
               ),
-              child: Hero(
-                tag: 'product_image_${widget.productModel.id}',
-                child: Image.network(
-                  widget.productModel.image,
-                  fit: BoxFit.contain,
-                ),
+              child: Image.network(
+                widget.productModel.image,
+                fit: BoxFit.contain,
               ),
             ),
 

@@ -13,7 +13,6 @@ class CustomTextFormField extends StatelessWidget {
     this.keyboardType,
     this.enabled = true,
     this.onTapOfTextFormField,
-    this.onTapOfGestureDetector,
   });
   final String? hintText;
   final Widget? prefixIcon;
@@ -23,32 +22,25 @@ class CustomTextFormField extends StatelessWidget {
   final TextInputType? keyboardType;
   final bool? enabled;
   final void Function()? onTapOfTextFormField;
-  final void Function()? onTapOfGestureDetector;
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTapOfGestureDetector,
-      child: AbsorbPointer(
-        absorbing: !(enabled ?? true),
-        child: TextFormField(
-          
-          enabled: enabled,
-          keyboardType: keyboardType ?? TextInputType.text,
-
-          validator: validator,
-          decoration: InputDecoration(
-            
-            prefixIcon: prefixIcon,
-            suffixIcon: suffixIcon,
-            hintStyle:
-                hintStyle ??
-                TextStyles.caption.copyWith(color: AppColors.blackNormalColor),
-            hintText: hintText,
-          ),
-          onTap: onTapOfTextFormField,
-        ),
+    return TextFormField(
+      
+      enabled: enabled,
+      keyboardType: keyboardType ?? TextInputType.text,
+        
+      validator: validator,
+      decoration: InputDecoration(
+        
+        prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
+        hintStyle:
+            hintStyle ??
+            TextStyles.caption.copyWith(color: AppColors.blackNormalColor),
+        hintText: hintText,
       ),
+      onTap: onTapOfTextFormField,
     );
   }
 }

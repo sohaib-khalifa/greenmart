@@ -22,16 +22,10 @@ class SearchScreen extends StatelessWidget {
         title: Padding(
           padding: const EdgeInsets.only(right: 12),
 
-          child: Hero(
-            tag: 'search',
-            child: Material(
-              color: Colors.transparent,
-              child: CustomTextFormField(
-                enabled: true,
-                prefixIcon: Icon(Icons.search),
-                hintText: 'Search Store',
-              ),
-            ),
+          child: CustomTextFormField(
+            enabled: true,
+            prefixIcon: Icon(Icons.search),
+            hintText: 'Search Store',
           ),
         ),
       ),

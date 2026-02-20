@@ -32,14 +32,7 @@ class ItemCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: Center(
-                child: Hero(
-                  tag: 'product_image_${productModel.id}',
-                  child: Image.network(productModel.image),
-                ),
-              ),
-            ),
+            Expanded(child: Center(child: Image.network(productModel.image))),
             SizedBox(height: 16),
 
             Text(
