@@ -3,7 +3,7 @@ import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/features/home/data/product_model.dart';
 
 class ProductQuantityAndPrice extends StatelessWidget {
-  final ProductModel productModel; 
+  final ProductModel productModel;
   final int count;
   final VoidCallback onIncrement;
   final VoidCallback onDecrement;
@@ -20,10 +20,8 @@ class ProductQuantityAndPrice extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        // زرار الناقص
         _buildCounterButton(Icons.remove, onDecrement, right: 10),
 
-        // مربع العدد
         Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
@@ -51,7 +49,6 @@ class ProductQuantityAndPrice extends StatelessWidget {
 
         const Spacer(),
 
-        // السعر الإجمالي (بيتحسب من الموديل مباشرة)
         Text(
           '\$${(productModel.price * count).toStringAsFixed(2)}',
           style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -60,7 +57,6 @@ class ProductQuantityAndPrice extends StatelessWidget {
     );
   }
 
-  // دالة زرار العداد (خاصة بالودجت دي)
   Widget _buildCounterButton(
     IconData icon,
     VoidCallback onTap, {

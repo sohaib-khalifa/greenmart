@@ -10,7 +10,7 @@ class ItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:onTap ,
+      onTap: onTap,
       child: Container(
         width: 160,
         margin: EdgeInsets.symmetric(vertical: 8),
@@ -26,15 +26,22 @@ class ItemCard extends StatelessWidget {
             ),
           ],
           borderRadius: BorderRadius.circular(16),
-      
+
           border: Border.all(color: AppColors.accentColor),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(child: Center(child: Image.network(productModel.image))),
+            Expanded(
+              child: Center(
+                child: Hero(
+                  tag: 'product_image_${productModel.id}',
+                  child: Image.network(productModel.image),
+                ),
+              ),
+            ),
             SizedBox(height: 16),
-      
+
             Text(
               // 'Bananas',
               productModel.name,
@@ -47,7 +54,7 @@ class ItemCard extends StatelessWidget {
               style: TextStyles.small.copyWith(color: AppColors.greyColor),
             ),
             SizedBox(height: 8),
-      
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -57,7 +64,8 @@ class ItemCard extends StatelessWidget {
                   style: TextStyles.body.copyWith(fontWeight: FontWeight.w600),
                 ),
                 FloatingActionButton.small(
-                  heroTag: UniqueKey(),
+                  // heroTag: UniqueKey(),
+                  heroTag: null,
                   elevation: 0,
                   backgroundColor: AppColors.primaryColor,
                   foregroundColor: AppColors.whiteColor,
