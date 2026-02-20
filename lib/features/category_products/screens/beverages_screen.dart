@@ -5,6 +5,13 @@ class BeveragesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Beverages'),
+      ),
+      body: Center(
+        child: Text('Beverages Products will be displayed here.'),
+      ),
+    );
   }
 }

@@ -5,6 +5,13 @@ class BakeryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Bakery'),
+      ),
+      body: Center(
+        child: Text('Bakery Products will be displayed here.'),
+      ),
+    );
   }
 }

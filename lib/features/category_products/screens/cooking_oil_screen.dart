@@ -5,6 +5,13 @@ class CookingOilScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cooking Oil'),
+      ),
+      body: Center(
+        child: Text('Cooking Oil Products will be displayed here.'),
+      ),
+    );
   }
 }

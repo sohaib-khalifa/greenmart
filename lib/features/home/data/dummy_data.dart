@@ -1,3 +1,251 @@
+// import 'package:greenmart/features/home/data/product_model.dart';
+
+// List<ProductModel> offersList = [
+//   ProductModel(
+//     id: '1',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+//     name: 'Bananas',
+//     quantityForPrice: "7pcs",
+//     price: 4.99,
+//   ),
+//   ProductModel(
+//     id: '2',
+//     image:
+//         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+//     name: 'Red Apple',
+//     quantityForPrice: "1kg",
+//     price: 3.99,
+//   ),
+//   ProductModel(
+//     id: '3',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+//     name: 'Bell Pepper Red',
+//     quantityForPrice: "1kg",
+//     price: 3.0,
+//   ),
+
+//   ProductModel(
+//     id: '4',
+//     image:
+//         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+//     name: 'Ginger',
+//     quantityForPrice: "250gm",
+//     price: 2.99,
+//   ),
+// ];
+
+// List<ProductModel> bestSellingList = [
+//   ProductModel(
+//     id: '1',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+//     name: 'Bell Pepper Red',
+//     quantityForPrice: "1kg",
+//     price: 3.0,
+//   ),
+//   ProductModel(
+//     id: '2',
+//     image:
+//         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+//     name: 'Ginger',
+//     quantityForPrice: "250gm",
+//     price: 2.99,
+//   ),
+//   ProductModel(
+//     id: '3',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+//     name: 'Bananas',
+//     quantityForPrice: "7pcs",
+//     price: 4.99,
+//   ),
+//   ProductModel(
+//     id: '4',
+//     image:
+//         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+//     name: 'Red Apple',
+//     quantityForPrice: "1kg",
+//     price: 3.99,
+//   ),
+// ];
+
+// List<ProductModel> allProductsList = [
+//   ProductModel(
+//     id: '1',
+//     image:
+//         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8vq9elNmD7LbX2VrziesRldY0jqXB54hLvA&s',
+//     name: 'Orange',
+//     quantityForPrice: "500gm",
+//     price: 1.99,
+//   ),
+//   ProductModel(
+//     id: '2',
+//     image:
+//         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT-bteAg0wbO0yBMfyM8fLq0vG5At3wwLtQ&s',
+//     name: 'Mango',
+//     quantityForPrice: "1kg",
+//     price: 6.99,
+//   ),
+//   ProductModel(
+//     id: '3',
+//     image:
+//         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+//     name: 'Ginger',
+//     quantityForPrice: "250gm",
+//     price: 2.99,
+//   ),
+//   ProductModel(
+//     id: '4',
+//     image:
+//         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+//     name: 'Red Apple',
+//     quantityForPrice: "1kg",
+//     price: 3.99,
+//   ),
+//   ProductModel(
+//     id: '5',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+//     name: 'Bell Pepper Red',
+//     quantityForPrice: "1kg",
+//     price: 3.0,
+//   ),
+//   ProductModel(
+//     id: '6',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+//     name: 'Bananas',
+//     quantityForPrice: "7pcs",
+//     price: 4.99,
+//   ),
+// ];
+
+
+// import 'package:greenmart/features/home/data/product_model.dart';
+
+// List<ProductModel> offersList = [
+//   ProductModel(
+//     id: '1',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+//     name: 'Bananas',
+//     quantityForPrice: "7pcs",
+//     price: 4.99,
+//   ),
+//   ProductModel(
+//     id: '2',
+//     image:
+//         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+//     name: 'Red Apple',
+//     quantityForPrice: "1kg",
+//     price: 3.99,
+//   ),
+//   ProductModel(
+//     id: '3',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+//     name: 'Bell Pepper Red',
+//     quantityForPrice: "1kg",
+//     price: 3.0,
+//   ),
+
+//   ProductModel(
+//     id: '4',
+//     image:
+//         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+//     name: 'Ginger',
+//     quantityForPrice: "250gm",
+//     price: 2.99,
+//   ),
+// ];
+
+// List<ProductModel> bestSellingList = [
+//   ProductModel(
+//     id: '1',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+//     name: 'Bell Pepper Red',
+//     quantityForPrice: "1kg",
+//     price: 3.0,
+//   ),
+//   ProductModel(
+//     id: '2',
+//     image:
+//         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+//     name: 'Ginger',
+//     quantityForPrice: "250gm",
+//     price: 2.99,
+//   ),
+//   ProductModel(
+//     id: '3',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+//     name: 'Bananas',
+//     quantityForPrice: "7pcs",
+//     price: 4.99,
+//   ),
+//   ProductModel(
+//     id: '4',
+//     image:
+//         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+//     name: 'Red Apple',
+//     quantityForPrice: "1kg",
+//     price: 3.99,
+//   ),
+// ];
+
+// List<ProductModel> allProductsList = [
+//   ProductModel(
+//     id: '1',
+//     image:
+//         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8vq9elNmD7LbX2VrziesRldY0jqXB54hLvA&s',
+//     name: 'Orange',
+//     quantityForPrice: "500gm",
+//     price: 1.99,
+//   ),
+//   ProductModel(
+//     id: '2',
+//     image:
+//         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT-bteAg0wbO0yBMfyM8fLq0vG5At3wwLtQ&s',
+//     name: 'Mango',
+//     quantityForPrice: "1kg",
+//     price: 6.99,
+//   ),
+//   ProductModel(
+//     id: '3',
+//     image:
+//         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
+//     name: 'Ginger',
+//     quantityForPrice: "250gm",
+//     price: 2.99,
+//   ),
+//   ProductModel(
+//     id: '4',
+//     image:
+//         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
+//     name: 'Red Apple',
+//     quantityForPrice: "1kg",
+//     price: 3.99,
+//   ),
+//   ProductModel(
+//     id: '5',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
+//     name: 'Bell Pepper Red',
+//     quantityForPrice: "1kg",
+//     price: 3.0,
+//   ),
+//   ProductModel(
+//     id: '6',
+//     image:
+//         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
+//     name: 'Bananas',
+//     quantityForPrice: "7pcs",
+//     price: 4.99,
+//   ),
+// ];
 import 'package:greenmart/features/home/data/product_model.dart';
 
 List<ProductModel> offersList = [
@@ -8,7 +256,7 @@ List<ProductModel> offersList = [
     name: 'Bananas',
     quantityForPrice: "7pcs",
     price: 4.99,
-  ),
+  description: 'not used here', ),
   ProductModel(
     id: '2',
     image:
@@ -16,7 +264,7 @@ List<ProductModel> offersList = [
     name: 'Red Apple',
     quantityForPrice: "1kg",
     price: 3.99,
-  ),
+    description: 'not used here',),
   ProductModel(
     id: '3',
     image:
@@ -24,8 +272,7 @@ List<ProductModel> offersList = [
     name: 'Bell Pepper Red',
     quantityForPrice: "1kg",
     price: 3.0,
-  ),
-
+    description: 'not used here',),
   ProductModel(
     id: '4',
     image:
@@ -33,6 +280,7 @@ List<ProductModel> offersList = [
     name: 'Ginger',
     quantityForPrice: "250gm",
     price: 2.99,
+    description: 'not used here',
   ),
 ];
 
@@ -44,6 +292,7 @@ List<ProductModel> bestSellingList = [
     name: 'Bell Pepper Red',
     quantityForPrice: "1kg",
     price: 3.0,
+    description: 'not used here',
   ),
   ProductModel(
     id: '2',
@@ -52,6 +301,7 @@ List<ProductModel> bestSellingList = [
     name: 'Ginger',
     quantityForPrice: "250gm",
     price: 2.99,
+    description: 'not used here',
   ),
   ProductModel(
     id: '3',
@@ -60,6 +310,7 @@ List<ProductModel> bestSellingList = [
     name: 'Bananas',
     quantityForPrice: "7pcs",
     price: 4.99,
+    description: 'not used here',
   ),
   ProductModel(
     id: '4',
@@ -68,6 +319,7 @@ List<ProductModel> bestSellingList = [
     name: 'Red Apple',
     quantityForPrice: "1kg",
     price: 3.99,
+    description: 'not used here',
   ),
 ];
 
@@ -79,6 +331,8 @@ List<ProductModel> allProductsList = [
     name: 'Orange',
     quantityForPrice: "500gm",
     price: 1.99,
+    description:
+        "Oranges are nutritious. Oranges may be good for vitamin C. Oranges may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
     id: '2',
@@ -87,6 +341,8 @@ List<ProductModel> allProductsList = [
     name: 'Mango',
     quantityForPrice: "1kg",
     price: 6.99,
+    description:
+        "Mangoes are nutritious. Mangoes may be good for skin. Mangoes may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
     id: '3',
@@ -95,6 +351,8 @@ List<ProductModel> allProductsList = [
     name: 'Ginger',
     quantityForPrice: "250gm",
     price: 2.99,
+    description:
+        "Ginger is nutritious. Ginger may be good for digestion. Ginger may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
     id: '4',
@@ -103,6 +361,8 @@ List<ProductModel> allProductsList = [
     name: 'Red Apple',
     quantityForPrice: "1kg",
     price: 3.99,
+    description:
+        "Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet.",
   ),
   ProductModel(
     id: '5',
@@ -111,6 +371,8 @@ List<ProductModel> allProductsList = [
     name: 'Bell Pepper Red',
     quantityForPrice: "1kg",
     price: 3.0,
+    description:
+        "Peppers are nutritious. Peppers may be good for immunity. Peppers may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
     id: '6',
@@ -119,5 +381,7 @@ List<ProductModel> allProductsList = [
     name: 'Bananas',
     quantityForPrice: "7pcs",
     price: 4.99,
+    description:
+        "Bananas are nutritious. Bananas may be good for energy boost. Bananas may be good for your heart. As part of a healthful and varied diet.",
   ),
 ];

@@ -5,6 +5,13 @@ class DairyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Dairy'),
+      ),
+      body: Center(
+        child: Text('Dairy Products will be displayed here.'),
+      ),
+    );
   }
 }

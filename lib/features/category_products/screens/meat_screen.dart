@@ -5,6 +5,13 @@ class MeatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Meat'),
+      ),
+      body: Center(
+        child: Text('Meat Products will be displayed here.'),
+      ),
+    );
   }
 }
