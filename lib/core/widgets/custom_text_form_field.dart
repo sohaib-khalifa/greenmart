@@ -13,6 +13,7 @@ class CustomTextFormField extends StatelessWidget {
     this.keyboardType,
     this.enabled = true,
     this.onTapOfTextFormField,
+    this.onChanged,
   });
   final String? hintText;
   final Widget? prefixIcon;
@@ -22,17 +23,17 @@ class CustomTextFormField extends StatelessWidget {
   final TextInputType? keyboardType;
   final bool? enabled;
   final void Function()? onTapOfTextFormField;
+  final void Function(String)? onChanged;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      
+      onChanged: onChanged,
       enabled: enabled,
       keyboardType: keyboardType ?? TextInputType.text,
-        
+
       validator: validator,
       decoration: InputDecoration(
-        
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
         hintStyle:

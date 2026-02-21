@@ -4,9 +4,15 @@ import 'package:greenmart/core/widgets/custom_text_form_field.dart';
 import 'package:greenmart/features/home/widgets/item_card.dart';
 import 'package:greenmart/features/search/data/dummy_data.dart';
 
-class SearchScreen extends StatelessWidget {
+class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
+  @override
+  State<SearchScreen> createState() => _SearchScreenState();
+}
+
+class _SearchScreenState extends State<SearchScreen> {
+  String query = '';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +29,11 @@ class SearchScreen extends StatelessWidget {
           padding: const EdgeInsets.only(right: 12),
 
           child: CustomTextFormField(
+            onChanged: (value) {
+              setState(() {
+                query = value;
+              });
+            },
             enabled: true,
             prefixIcon: Icon(Icons.search),
             hintText: 'Search Store',
@@ -37,14 +48,17 @@ class SearchScreen extends StatelessWidget {
           bottom: 10,
         ),
         child: GridView.builder(
-          itemCount: mockSearchDrinksProductsList.length,
+          // itemCount: mockSearchDrinksProductsList.length,
+                    itemCount: getproductsBySearchQuery(query).length,
+
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisSpacing: 10,
             crossAxisCount: 2,
             mainAxisExtent: 250,
           ),
           itemBuilder: (context, index) =>
-              ItemCard(productModel: mockSearchDrinksProductsList[index]),
+              // ItemCard(productModel: mockSearchDrinksProductsList[index]),
+              ItemCard(productModel: getproductsBySearchQuery(query)[index]),
         ),
       ),
     );

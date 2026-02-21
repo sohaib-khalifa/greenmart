@@ -56,3 +56,11 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 4.99,
   ),
 ];
+
+List<ProductModel> getproductsBySearchQuery(String query) {
+  return mockSearchDrinksProductsList
+      .where(
+        (product) => product.name.toLowerCase().contains(query.toLowerCase()),
+      )
+      .toList();
+}
