@@ -28,15 +28,21 @@ class _SearchScreenState extends State<SearchScreen> {
         title: Padding(
           padding: const EdgeInsets.only(right: 12),
 
-          child: CustomTextFormField(
-            onChanged: (value) {
-              setState(() {
-                query = value;
-              });
-            },
-            enabled: true,
-            prefixIcon: Icon(Icons.search),
-            hintText: 'Search Store',
+          child: Hero(
+            tag: 'search',
+            child: Material(
+              color: Colors.transparent,
+              child: CustomTextFormField(
+                onChanged: (value) {
+                  setState(() {
+                    query = value;
+                  });
+                },
+                enabled: true,
+                prefixIcon: Icon(Icons.search),
+                hintText: 'Search Store',
+              ),
+            ),
           ),
         ),
       ),
@@ -49,7 +55,7 @@ class _SearchScreenState extends State<SearchScreen> {
         ),
         child: GridView.builder(
           // itemCount: mockSearchDrinksProductsList.length,
-                    itemCount: getproductsBySearchQuery(query).length,
+          itemCount: getproductsBySearchQuery(query).length,
 
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisSpacing: 10,

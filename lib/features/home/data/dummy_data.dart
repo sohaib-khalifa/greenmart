@@ -246,10 +246,12 @@
 //     price: 4.99,
 //   ),
 // ];
+import 'package:flutter/material.dart';
 import 'package:greenmart/features/home/data/product_model.dart';
 
 List<ProductModel> offersList = [
   ProductModel(
+         taqId: UniqueKey().toString()  ,
     id: '1',
     image:
         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
@@ -258,6 +260,7 @@ List<ProductModel> offersList = [
     price: 4.99,
   description: 'not used here', ),
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '2',
     image:
         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
@@ -266,6 +269,7 @@ List<ProductModel> offersList = [
     price: 3.99,
     description: 'not used here',),
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '3',
     image:
         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
@@ -274,6 +278,7 @@ List<ProductModel> offersList = [
     price: 3.0,
     description: 'not used here',),
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '4',
     image:
         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
@@ -286,7 +291,8 @@ List<ProductModel> offersList = [
 
 List<ProductModel> bestSellingList = [
   ProductModel(
-    id: '1',
+       taqId: UniqueKey().toString()  ,
+    id: '1b',
     image:
         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
     name: 'Bell Pepper Red',
@@ -295,7 +301,8 @@ List<ProductModel> bestSellingList = [
     description: 'not used here',
   ),
   ProductModel(
-    id: '2',
+       taqId: UniqueKey().toString()  ,
+    id: '2b',
     image:
         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
     name: 'Ginger',
@@ -304,7 +311,8 @@ List<ProductModel> bestSellingList = [
     description: 'not used here',
   ),
   ProductModel(
-    id: '3',
+       taqId: UniqueKey().toString()  ,
+    id: '3b',
     image:
         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',
     name: 'Bananas',
@@ -313,7 +321,8 @@ List<ProductModel> bestSellingList = [
     description: 'not used here',
   ),
   ProductModel(
-    id: '4',
+       taqId: UniqueKey().toString()  ,
+    id: '4b',
     image:
         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
     name: 'Red Apple',
@@ -325,6 +334,7 @@ List<ProductModel> bestSellingList = [
 
 List<ProductModel> allProductsList = [
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '1C',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8vq9elNmD7LbX2VrziesRldY0jqXB54hLvA&s',
@@ -335,6 +345,7 @@ List<ProductModel> allProductsList = [
         "Oranges are nutritious. Oranges may be good for vitamin C. Oranges may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '2C',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT-bteAg0wbO0yBMfyM8fLq0vG5At3wwLtQ&s',
@@ -345,6 +356,7 @@ List<ProductModel> allProductsList = [
         "Mangoes are nutritious. Mangoes may be good for skin. Mangoes may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '3C',
     image:
         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi9EDJaccY9Hz1Y7qfI-R5JqWYSnyranEi4DiVB35WWbf93Hk3',
@@ -355,6 +367,7 @@ List<ProductModel> allProductsList = [
         "Ginger is nutritious. Ginger may be good for digestion. Ginger may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '4C',
     image:
         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNmnE7KBkZdxFQT0CrFGEOQ1rcqsyZ_y_e2_XSnd33qBdAVqjn',
@@ -365,6 +378,7 @@ List<ProductModel> allProductsList = [
         "Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet.",
   ),
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '5C',
     image:
         'https://cdn.mafrservices.com/sys-master-root/h49/h90/9342419238942/287355_main.jpg',
@@ -375,6 +389,7 @@ List<ProductModel> allProductsList = [
         "Peppers are nutritious. Peppers may be good for immunity. Peppers may be good for your heart. As part of a healthful and varied diet.",
   ),
   ProductModel(
+       taqId: UniqueKey().toString()  ,
     id: '6C',
     image:
         'https://cdn.mafrservices.com/sys-master-root/h3a/h84/12832633487390/32566_main.jpg',

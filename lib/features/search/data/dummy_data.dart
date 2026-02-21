@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:greenmart/features/home/data/product_model.dart';
 
 List<ProductModel> mockSearchDrinksProductsList = [
   ProductModel(
+    taqId: UniqueKey().toString(),
     description: 'not used here 1',
     id: 'd1',
     image:
@@ -11,6 +13,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 1.99,
   ),
   ProductModel(
+    taqId: UniqueKey().toString(),
     description: 'not used here 2',
     id: 'd2',
     image:
@@ -20,6 +23,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 1.50,
   ),
   ProductModel(
+    taqId: UniqueKey().toString(),
     description: 'not used here 3',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gK95hKJCIHkiDALFRdN7eJ2WQ3o4f6keoQ&s',
@@ -29,6 +33,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 15.99,
   ),
   ProductModel(
+    taqId: UniqueKey().toString(),
     description: 'not used here 4',
     id: 'd4',
     image:
@@ -38,6 +43,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 15.99,
   ),
   ProductModel(
+    taqId: UniqueKey().toString(),
     description: 'not used here 5',
     id: 'd5',
     image:
@@ -47,6 +53,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 4.99,
   ),
   ProductModel(
+    taqId: UniqueKey().toString(),
     description: 'not used here 6',
     id: 'd6',
     image:

@@ -33,15 +33,20 @@ class ShopScreen extends StatelessWidget {
                 onTap: () {
                   pushTo(context, SearchScreen());
                 },
-                child: CustomTextFormField(
-                
-                  // onTap: () {
-                  // onTapOfCustomTextFormField not do ===> because exist enabled => false
-                  //   pushTo(context, SearchScreen());
-                  // },
-                  enabled: false,
-                  prefixIcon: Icon(Icons.search),
-                  hintText: 'Search Store',
+                child: Hero(
+                  tag: 'search',
+                  child: Material(
+                    color: Colors.transparent,
+                    child: CustomTextFormField(
+                      // onTap: () {
+                      // onTapOfCustomTextFormField not do ===> because exist enabled => false
+                      //   pushTo(context, SearchScreen());
+                      // },
+                      enabled: false,
+                      prefixIcon: Icon(Icons.search),
+                      hintText: 'Search Store',
+                    ),
+                  ),
                 ),
               ),
 
