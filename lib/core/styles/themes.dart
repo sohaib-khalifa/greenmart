@@ -44,5 +44,6 @@ class AppThemes {
         height: 1.8,
       ),
     ),
+    dividerColor: Colors.transparent,
   );
 }

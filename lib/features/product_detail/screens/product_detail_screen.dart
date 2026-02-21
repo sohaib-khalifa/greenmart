@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:greenmart/core/functions/navigation.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/styles/text_style.dart';
@@ -185,7 +186,10 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 10),
-                            child: const Icon(Icons.keyboard_arrow_right),
+                            child: const Icon(
+                              Icons.keyboard_arrow_right,
+                              size: 26,
+                            ),
                           ),
                         ],
                       ),
@@ -196,7 +200,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
 
                   // Review Row
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text(
                         "Review",
@@ -205,22 +209,56 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Row(
-                        children:
-                            List.generate(
-                              5,
-                              (index) => const Icon(
-                                Icons.star,
-                                color: Color(0xFFF3603F),
-                                size: 20,
-                              ),
-                            )..add(
-                              Padding(
-                                padding: const EdgeInsets.only(left: 10),
-                                child: const Icon(Icons.keyboard_arrow_right),
-                              ),
-                            ),
+                      Spacer(),
+                      RatingBar.builder(
+                        initialRating: 3,
+                        minRating: 1,
+                        allowHalfRating: false,
+                        itemCount: 5,
+                        itemPadding: EdgeInsets.all(0),
+                        direction: Axis.horizontal,
+                        itemSize: 30,
+                        itemBuilder: (context, index) =>
+                            Icon(Icons.star, color: Color(0xFFF3603F)),
+                        onRatingUpdate: (double value) {},
                       ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: IconButton(
+                          style: IconButton.styleFrom(
+                            padding: EdgeInsets.zero,
+                            minimumSize: Size.zero,
+                            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          ),
+                          onPressed: () {},
+                          icon: Icon(
+                            color: Colors.black,
+                            Icons.keyboard_arrow_right,
+                            size: 26,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+
+                      // Row(
+                      //   children:
+                      //       List.generate(
+                      //         5,
+                      //         (index) => const Icon(
+                      //           Icons.star,
+                      //           color: Color(0xFFF3603F),
+                      //           size: 20,
+                      //         ),
+                      //       )..add(
+                      //         Padding(
+                      //           padding: const EdgeInsets.only(left: 10),
+                      //           child: const Icon(
+                      //             Icons.keyboard_arrow_right,
+                      //             size: 26,
+                      //           ),
+                      //         ),
+                      //       ),
+                      // ),
                     ],
                   ),
                 ],
@@ -246,23 +284,25 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
   }
 
   Widget _buildExpandableSection(String title, String description) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return ExpansionTile(
+      title: Text(
+        title,
+        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+      ),
+      tilePadding: EdgeInsets.zero,
+      // childrenPadding: EdgeInsets.zero,
+      trailing: const Icon(
+        Icons.keyboard_arrow_down,
+        color: Colors.black,
+        size: 26,
+      ),
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              title,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
-            const Icon(Icons.keyboard_arrow_down),
-          ],
-        ),
-        const SizedBox(height: 10),
-        Text(
-          description,
-          style: const TextStyle(color: Colors.grey, height: 1.5),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: Text(
+            description,
+            style: const TextStyle(color: Colors.grey, height: 1.5),
+          ),
         ),
       ],
     );
