@@ -15,6 +15,8 @@ class FavouriteItemTile extends StatelessWidget {
         width: 60,
         height: 60,
         fit: BoxFit.cover,
+        errorBuilder: (context, error, stackTrace) =>
+            Icon(Icons.image_not_supported),
       ),
       title: Text(
         productModel.name,

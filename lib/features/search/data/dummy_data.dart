@@ -2,7 +2,7 @@ import 'package:greenmart/features/home/data/product_model.dart';
 
 List<ProductModel> mockSearchDrinksProductsList = [
   ProductModel(
-    description: 'not used here',
+    description: 'not used here 1',
     id: 'd1',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfDeaMF3DGM6S4lWuPut2CMfBVLtNuPwBtxQ&s',
@@ -11,7 +11,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 1.99,
   ),
   ProductModel(
-    description: 'not used here',
+    description: 'not used here 2',
     id: 'd2',
     image:
         'https://136957708.cdn6.editmysite.com/uploads/1/3/6/9/136957708/2ZKMWNHDYK7YTK47HHJTVHDI.jpeg',
@@ -20,7 +20,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 1.50,
   ),
   ProductModel(
-    description: 'not used here',
+    description: 'not used here 3',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gK95hKJCIHkiDALFRdN7eJ2WQ3o4f6keoQ&s',
     id: 'd3',
@@ -29,7 +29,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 15.99,
   ),
   ProductModel(
-    description: 'not used here',
+    description: 'not used here 4',
     id: 'd4',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnI0hDYtoQ81Jib0V7D1Pq1QHrTjLnx15smQ&s',
@@ -38,7 +38,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 15.99,
   ),
   ProductModel(
-    description: 'not used here',
+    description: 'not used here 5',
     id: 'd5',
     image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK-1dJEjfUnixIeXMoZffrEa08XsRsoDDLww&s',
@@ -47,7 +47,7 @@ List<ProductModel> mockSearchDrinksProductsList = [
     price: 4.99,
   ),
   ProductModel(
-    description: 'not used here',
+    description: 'not used here 6',
     id: 'd6',
     image:
         'https://image-cdn.ubuy.com/pepsi-cola-soda-pop-16-fl-oz-bottle/400_400_100/661b74ec3d82f96eca5ac01d.jpg',
