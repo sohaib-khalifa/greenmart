@@ -11,7 +11,7 @@ import 'package:greenmart/features/home/screens/shop_screen.dart';
 
 class MainAppScreen extends StatefulWidget {
   const MainAppScreen({super.key});
-
+  
   @override
   State<MainAppScreen> createState() => _MainAppScreenState();
 }

@@ -21,4 +21,5 @@ class AppImages {
   static const String breakfast = 'assets/images/breakfast.jpg';
   static const String frozenFoods = 'assets/images/frozen_foods.png';
   static const String paymentIcon = 'assets/images/payment_icon.png';
+  static const String orderAcceptedSvg = 'assets/images/order_accepted.svg';
 }
