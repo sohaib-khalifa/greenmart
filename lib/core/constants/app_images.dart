@@ -8,17 +8,16 @@ class AppImages {
   static const String userSvg = 'assets/icons/user.svg';
   static const String exploreSvg = 'assets/icons/explore.svg';
   static const String cartSvg = 'assets/icons/cart.svg';
-    static const String filterSvg = 'assets/images/filter.svg';
+  static const String filterSvg = 'assets/images/filter.svg';
 
-
-
-    static const String fruitsVegetable = 'assets/images/fruits_vegetable.png';
+  static const String fruitsVegetable = 'assets/images/fruits_vegetable.png';
 
   static const String cookingOil = 'assets/images/cooking_oil.png';
   static const String meatAndFish = 'assets/images/meat_and_fish.png';
   static const String bakery = 'assets/images/bakery.png';
   static const String dairyEggs = 'assets/images/dairy_eggs.png';
   static const String beverages = 'assets/images/beverages.png';
-    static const String profile = 'assets/images/profile.jpeg';
-
+  static const String profile = 'assets/images/profile.jpeg';
+  static const String breakfast = 'assets/images/breakfast.jpg';
+  static const String frozenFoods = 'assets/images/frozen_foods.png';
 }
