@@ -5,6 +5,7 @@ import 'package:greenmart/core/widgets/primary_button.dart';
 import 'package:greenmart/features/cart/data/cart_item_model.dart';
 import 'package:greenmart/features/cart/data/dummy_data.dart';
 import 'package:greenmart/features/cart/widgets/cart_item_tile.dart';
+import 'package:greenmart/features/cart/widgets/checkout_bottom_sheet.dart';
 
 class MyCartScreen extends StatefulWidget {
   const MyCartScreen({super.key});
@@ -51,7 +52,17 @@ class _MyCartScreenState extends State<MyCartScreen> {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(20),
         child: PrimaryButton(
-          onPressed: () {},
+          onPressed: () {
+            if (_totalPrice > 0) {
+              showModalBottomSheet(
+                isScrollControlled: true,
+                context: context,
+                builder: (context) {
+                  return CheckoutBottomSheet(totalPrice: _totalPrice);
+                },
+              );
+            }
+          },
           title: 'Go to Checkout   \$${_totalPrice.toStringAsFixed(2)}',
           height: 65,
           width: double.infinity,

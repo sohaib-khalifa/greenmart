@@ -20,4 +20,5 @@ class AppImages {
   static const String profile = 'assets/images/profile.jpeg';
   static const String breakfast = 'assets/images/breakfast.jpg';
   static const String frozenFoods = 'assets/images/frozen_foods.png';
+  static const String paymentIcon = 'assets/images/payment_icon.png';
 }
