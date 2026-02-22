@@ -4,6 +4,7 @@ import 'package:greenmart/core/constants/app_images.dart';
 import 'package:greenmart/core/styles/color.dart';
 import 'package:greenmart/core/widgets/custom_svg_picture.dart';
 import 'package:greenmart/features/account/screens/account_screen.dart';
+import 'package:greenmart/features/cart/screens/my_cart_screen.dart';
 import 'package:greenmart/features/explore/screens/explore_screen.dart';
 import 'package:greenmart/features/favourite/screens/favourite_screen.dart';
 import 'package:greenmart/features/home/screens/shop_screen.dart';
@@ -19,10 +20,9 @@ int currentIndex = 0;
 List<Widget> screens = [
   ShopScreen(),
   ExploreScreen(),
-  Center(child: Text('Cart')),
+  MyCartScreen(),
   FavouriteScreen(),
   AccountScreen(),
-  // Center(child: Text('Account')),
 ];
 
 class _MainAppScreenState extends State<MainAppScreen> {

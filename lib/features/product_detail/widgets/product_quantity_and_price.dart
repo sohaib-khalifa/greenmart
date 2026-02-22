@@ -39,7 +39,6 @@ class ProductQuantityAndPrice extends StatelessWidget {
           ),
         ),
 
-        // زرار الزائد
         _buildCounterButton(
           Icons.add,
           onIncrement,
@@ -51,7 +50,7 @@ class ProductQuantityAndPrice extends StatelessWidget {
 
         Text(
           '\$${(productModel.price * count).toStringAsFixed(2)}',
-          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
         ),
       ],
     );
